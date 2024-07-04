@@ -1,4 +1,4 @@
-
+/*
 function encriptar (){
     var texto = document.querySelector("#input-texto").value;
     var textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
@@ -15,3 +15,4 @@ document.querySelector("#input-texto").value;
 }
 
 var boton2 = document.querySelector("#btn-desencriptar"); boton2.onclick = desencriptar;
+*/

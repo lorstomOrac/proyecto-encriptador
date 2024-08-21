@@ -55,6 +55,21 @@ body{
    
 }
 
+.boton__encriptar_copiar{
+    background-color: #D8DFE8;
+    color: darkblue;
+    font-weight: 300;
+    width: 200px;
+    padding: 24px;
+    margin: 24px 24px 24px 24px;
+    border-radius: 24px;
+    font-weight: 300;
+    
+    
+    align-self: flex-end;
+    
+}
+
 .mensaje{
     display: flex;
     align-items: center;
@@ -83,27 +98,33 @@ body{
 }
 .muñeco_desencriptar{
     display: none;
+    
 }
 .mensaje_informativo{
-    font-size: 2.4rem;
+    font-size: 1rem;
+    color: gray;
+}
+.parrafo_del_muñeco{
+    font-size: 1rem;
     color: gray;
 }
 .mensaje_desencripta{
-    width: 26.3rem;
-    display: none;
-    flex-direction: column;
-    gap: 2.4rem;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .desencripta{
   border-radius: 3.2rem;
   padding: 3.2rem;
   margin: 0 auto 3.2rem;
-  text-align: center;
+
   box-shadow: 0 24px 32px rgba(0, 0, 0, .2);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
+  
+  align-items: flex-end;
   height: 35rem;
 }
  .cuadro__encriptador{

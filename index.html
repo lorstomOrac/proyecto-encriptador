@@ -26,12 +26,16 @@
         </form>
         </section>
        
-        <section>
-            <h1>
-                texto desencriptado
-            </h1>
-            <input class="salida__texto" type="text" id="texto__salida">
-            <input class="boton__copiar" type="button" id="copiar_texto">
+        <section class="desencripta">
+           <div class="mensaje_desencripta">
+            <img class="muñeco_desencriptar" src="./img/Muñeco.png" alt="muñeco_pregunton">
+            <h1 class="mensaje_informativo"> Ningun mensaje fue encontrado</h1>
+            <p class="parrafo_del_muñeco"> Ingrese el texto que quiere encriptar o desencriptar</p>
+           </div>
+            <div class="desencripta_frase">
+                <textarea class="lugar_de_la_frase" id="area_desencriptada" readonly></textarea>
+                <button onclick="copea();" class="boton__encriptar" id="copea" disabled>Copiar</button>
+            </div>
         </section>
       
     </main>

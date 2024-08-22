@@ -3,7 +3,8 @@
 :root{
     --fuente-inter: "Inter", sans-serif;
     --color-fuente: #000000;
-    --color_letra: gray;
+    --color_letra1: #343A40;
+    --color_letra2: #495057;
 }
 
 
@@ -49,12 +50,24 @@ body{
     
 }
 
-.boton__encriptar:disabled{
+.boton__desencriptar{
+    border-radius: 24px;
+    font-size: 1rem;
+    width: 200px;
+    padding: 24px;
+    margin: 24px 24px 24px 24px;
+    background-color: #D8DFE8;
+    color: darkblue;
+    font-family: var(--fuente-inter);
+    font-weight: 300;
+}
+
+/*.boton__encriptar:disabled{
     background-color: #D8DFE8;
     color: darkblue;
     font-weight: 300;
    
-}
+}*/
 
 .boton__encriptar_copiar{
     background-color: #D8DFE8;
@@ -65,6 +78,7 @@ body{
     margin: 24px 24px 24px 24px;
     border-radius: 24px;
     font-weight: 300;
+    font-family: var(--fuente-inter);
     
     
    /* align-self: flex-end;*/
@@ -99,22 +113,20 @@ body{
 }
 .muñeco_desencriptar{
     
-height: 16rem;
+height: 14rem;
 
     
 }
 
 .mensaje_informativo{
     font-size: 1rem;
-    color: var(--color_letra);
+    color: var(--color_letra1);
     font-family: var(--fuente-inter);
-    
-    
-
 }
+
 .parrafo_del_muñeco{
     font-size: 1rem;
-    color: var(--color_letra);
+    color: var(--color_letra2);
     font-family: var(--fuente-inter);
     flex-direction: column;
 }
@@ -122,22 +134,24 @@ height: 16rem;
     
     /*display: flex;*/
     /*flex-direction: row;*/
-    gap: 3rem;
    
-    
+   
+    padding: 1rem;
+   /* height: 10rem;*/
 }
 
 .lugar_de_la_frase{
 flex-direction: column;
-height: rem;
+height: 3rem;
+width: 20rem;
 }
 
 .desencripta_frase{
     width: 24rem;
-   
+   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1rem;
 
   /*justify-content: center;*/
 }

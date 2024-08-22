@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root{
     --fuente-inter: "Inter", sans-serif;
     --color-fuente: #000000;
+    --color_letra: gray;
 }
 
 
@@ -102,11 +103,13 @@ body{
 }
 .mensaje_informativo{
     font-size: 1rem;
-    color: gray;
+    color: var(--color_letra);
+    font-family: var(--fuente-inter);
 }
 .parrafo_del_muñeco{
     font-size: 1rem;
-    color: gray;
+    color: var(--color_letra);
+    font-family: var(--fuente-inter);
 }
 .mensaje_desencripta{
     

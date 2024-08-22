@@ -114,7 +114,7 @@ body{
 }
 .muñeco_desencriptar{
     
-height: 14rem;
+height: 16rem;
 
     
 }
@@ -130,6 +130,7 @@ height: 14rem;
     color: var(--color_letra2);
     font-family: var(--fuente-inter);
     flex-direction: column;
+    padding: 1rem;
 }
 .mensaje_desencripta{
     

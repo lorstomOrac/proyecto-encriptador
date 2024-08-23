@@ -1,13 +1,13 @@
 const ingresaTexto = document.querySelector('#texto__ingresado');
-const encriptaTexto = document.querySelector('#lugar_de_la_frase');
+const encriptaTexto = document.querySelector('#area_desencriptada');
 
 const mensajirijillo= document.querySelector('.mensaje');
 const mensajeDesencriptado = document.querySelector('.mensaje_desencripta');
 const resultadoDesencriptado = document.querySelector('.desencripta_frase');
 
-const botonEncripta = document.querySelector('#boton__encriptar');
-const botonDesencripta = document.querySelector('#boton__desencriptar');
-const botonCopear = document.querySelector('#boton__encriptar_copiar');
+const botonEncripta = document.querySelector('#encriptara');
+const botonDesencripta = document.querySelector('#desencriptara');
+const botonCopear = document.querySelector('#copea');
 
 const mezclar = /^[a-z0-9 ]*$/;
 

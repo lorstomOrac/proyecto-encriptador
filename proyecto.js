@@ -1,93 +1,89 @@
-const textInput = document.querySelector('#frase');
-const textInputEncriptada = document.querySelector('#frase-encriptada');
+const ingresaTexto = document.querySelector('#texto__ingresado');
+const encriptaTexto = document.querySelector('#lugar_de_la_frase');
 
-const sugerencia = document.querySelector('.form__sugerencia');
-const desencriptarMsg = document.querySelector('.desencriptar__mensaje');
-const desencriptarResultado = document.querySelector('.desencriptar__resultado');
+const mensajirijillo= document.querySelector('.mensaje');
+const mensajeDesencriptado = document.querySelector('.mensaje_desencripta');
+const resultadoDesencriptado = document.querySelector('.desencripta_frase');
 
-const btnEncriptar = document.querySelector('#btn-encriptar');
-const btnDesencriptar = document.querySelector('#btn-desencriptar');
-const btnCopy = document.querySelector('#btn-copiar');
+const botonEncripta = document.querySelector('#boton__encriptar');
+const botonDesencripta = document.querySelector('#boton__desencriptar');
+const botonCopear = document.querySelector('#boton__encriptar_copiar');
 
-const regexInput = /^[a-z0-9 ]*$/;
+const mezclar = /^[a-z0-9 ]*$/;
 
-let mensaje = true;
-let resultado = false;
+let mensajito = true;
+let resultadito = false;
 
-// Evalúa la frase usando una expresión regular
-function encriptarFrase() {
-  if (!regexInput.test(textInput.value) || textInput.value.length === 0) {
-    sugerencia.style.display = "flex";
-
-    mensaje = true;
-    mostrarMensaje()
-    resultado = false;
-    mostrarResultado();
+function muestraMensajito() {
+  if(mensajes) {
+    mensajeDesencriptado.style.display = "flex";
   } else {
-    sugerencia.style.display = "none";
+    mensajeDesencriptado.style.display = "none";
+  }
+}
 
-    let fraseEncriptada = textInput.value.
+
+function muestraResultadito() {
+  if(resultados) {
+    resultadoDesencriptado.style.display = "flex";
+  } else {
+    resultadoDesencriptado.style.display = "none";
+  }
+}
+
+function encriptar() {
+  if (!mezclar.test(ingresaTexto.value) || ingresaTexto.value.length === 0) {
+    mensajirijillo.style.display = "flex";
+
+    mensajito = true;
+    muestraMensajito()
+    resultado = false;
+    muestraResultadito();
+  } else {
+    mensajirijillo.style.display = "none";
+
+    let encriptaFrase1 = textInput.value.
                                           replaceAll("e", "enter").
                                           replaceAll("i", "imes").
                                           replaceAll("a", "ai").
                                           replaceAll("o", "ober").
                                           replaceAll("u", "ufat");
 
-    textInputEncriptada.value = fraseEncriptada
+    encriptaTexto.value = encriptaFrase1
 
-    mensaje = false;
-    mostrarMensaje()
-    resultado = true;
-    mostrarResultado();
+    mensajes = false;
+    muestraMensajito()
+    resultados = true;
+    muestraResultadito();
 
-    textInput.value = '';
+    ingresaTexto.value = '';
   }
 }
-btnEncriptar.addEventListener('click', encriptarFrase);
+botonEncripta.addEventListener('click', encriptar);
 
-// Función que copia la frase encriptada en el textarea para desencriptar
-function copy() {
-  textInputEncriptada.select();
-  document.execCommand("copy");
-  textInputEncriptada.setAttribute('disabled', true);
-  textInputEncriptada.value = '';
-  alert("El texto ha sido copiado")
-}
-btnCopy.addEventListener('click', copy);
-
-// Función inversa, para desencriptar
-function desencriptarFrase() {
-  let fraseDesencriptada = textInput.value.
+function desencriptar() {
+  let desencriptaFrase1 = ingresaTexto.value.
                                         replaceAll("ufat", "u").
                                         replaceAll("ober", "o").
                                         replaceAll("ai", "a").
                                         replaceAll("imes", "i").
                                         replaceAll("enter", "e");
-  textInputEncriptada.value = fraseDesencriptada;
+  encriptaTexto.value = desencriptaFrase1;
 
-  mensaje = false;
-  mostrarMensaje()
-  resultado = true;
-  mostrarResultado();
+  mensajes = false;
+  muestraMensajito();
+  resultados = true;
+  muestraResultadito();
 
-  textInput.value = '';
+  ingresaTexto.value = '';
 }
-btnDesencriptar.addEventListener('click', desencriptarFrase);
+botonDesencripta.addEventListener('click', desencriptar);
 
-// Función que muestra el mensaje de error si no se ingresa un texto
-function mostrarMensaje() {
-  if(mensaje) {
-    desencriptarMsg.style.display = "flex";
-  } else {
-    desencriptarMsg.style.display = "none";
-  }
+function copea() {
+  encriptaTexto.select();
+  document.execCommand("copy");
+  encriptaTexto.setAttribute('disabled', true);
+  encriptaTexto.value = '';
+  alert("se copio el mensaje")
 }
-
-// Función que muestra el resultado
-function mostrarResultado() {
-  if(resultado) {
-    desencriptarResultado.style.display = "flex";
-  } else {
-    desencriptarResultado.style.display = "none";
-  }
-}
+botonCopear.addEventListener('click', copea);

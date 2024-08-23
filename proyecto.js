@@ -59,10 +59,12 @@ function encriptar() {
     resultadito = true;
     muestraResultadito();
 
-    ingresaTexto.value = '';
+    ingresaTexto.value = "";
   }
+  
 }
-botonEncripta.addEventListener('click', encriptar);
+
+botonEncripta.addEventListener("click",encriptar,true);
 
 function desencriptar() {
   let desencriptaFrase1 = ingresaTexto.value.replaceAll("ufat", "u");                                       
@@ -81,15 +83,17 @@ function desencriptar() {
   resultadito = true;
   muestraResultadito();
 
-  ingresaTexto.value = '';
+  ingresaTexto.value = "";
+  
 }
-botonDesencripta.addEventListener('click', desencriptar);
+focus(resultadoDesencriptado);
+botonDesencripta.addEventListener("click",desencriptar,true);
 
 function copea() {
   encriptaTexto.select();
-  document.execCommand("copy");
+ /* document.execCommand("copy"); */
   encriptaTexto.setAttribute('disabled', true);
-  encriptaTexto.value = '';
+  encriptaTexto.value = "";
   alert("se copio el mensaje")
 }
-botonCopear.addEventListener('click', copea);
+botonCopear.addEventListener("click",copea,true);

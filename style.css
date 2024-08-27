@@ -317,96 +317,83 @@ font-size: 1.5rem;
       height: 100%;
     }
   
-    .footer {
+    .final__pagina {
       flex-direction: row;
       gap: 3rem;
       align-items: center;
     }
-  
-    .links__container {
-      margin-top: 0;
-      gap: 1.5rem;
-    }
   }
   
-  @media screen and (min-width: 1201px) {
-    .container {
-      display: flex;
-      flex-direction: column;
-      max-width: 144.0rem;
-      margin: 0 auto;
-    }
+  /*@media screen and (min-width: 1201px) {
+    
   
-    .main__container {
+    .cuadro__encriptador {
       flex-direction: row;
       max-height: 100vh;
       position: relative;
       gap: 10rem;
     }
   
-    .header {
+    .cabeza {
       position: absolute;
       top: 4rem;
       left: 1.6rem;
       width: 12rem;
     }
     
-    .logo {
+    .imagen__Alura {
       top: 0;
       left: 0;
     }
   
-    .form {
+    .forma {
       margin-top: 16.8rem;
     }
   
-    .form__frase,
-    .form__sugerencia, 
-    .btn__container {
+    .ingresar__texto,
+    .mensaje, 
+    .botones__encriptacion {
       width: 62.8rem;
     }
   
-    .form__frase {
+    .ingresar__texto {
       height: 26.9rem;
     }
   
-    .btn__container {
+    .botones__encriptacion {
       flex-direction: row;
       margin-bottom: 8rem;
     }
   
-    .desencriptar__mensaje__img-muñeco {
+    .muñeco_desencriptar {
       display: inline-block;
     }
   
-    .desencriptar {
+    .desencripta {
       width: 40rem;
       margin:  4rem 4rem 4rem 0;
     }
   
-    .desencriptar__mensaje {
+    .mensaje_desencripta {
       width: 33.6rem;
       display: flex;
     }
   
-    .desencriptar__resultado {
+    .desencripta_frase {
       width: 33.6rem;
       height: 100%;
       display: none;
     }
   
-    .frase-encriptada {
+    .lugar_de_la_frase {
       height: 100%;
     }
   
-    .footer {
+    .final__pagina {
       flex-direction: row;
       gap: 3rem;
       align-items: center;
     }
   
-    .links__container {
-      margin-top: 0;
-      gap: 1.5rem;
-    }
-  }
+  
+  }*/

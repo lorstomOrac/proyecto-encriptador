@@ -79,9 +79,13 @@ botonDesencripta.addEventListener("click",desencriptar,true);
 function copea() {
   encriptaTexto.select();
   document.execCommand('copy'); //copea el texto en el portapapeles
+
   encriptaTexto.setAttribute('disabled', true);
   encriptaTexto.value = "";
   alert("se copio el mensaje")
+  setTimeout(() => {
+    document.body.removeChild(tempInput);
+     }, 200);
 
 }
 botonCopear.addEventListener("click",copea,true);

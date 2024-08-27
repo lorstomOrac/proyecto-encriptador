@@ -200,3 +200,213 @@ font-size: 1.5rem;
     font-weight: 400;
     background-color: #FFC470;
  }
+
+
+ @media screen and (min-width: 481px) and (max-width: 768px) {
+    .ingresar__texto, 
+    .desencripta,
+    .mensaje, 
+    .botones__encriptacion {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .ingresar__texto {
+      /* height: 55rem; */
+      margin-bottom: 6.4rem;
+    }
+  
+    .mensaje {
+      margin-bottom: 1.6rem;
+    }
+  
+    .botones__encriptacion {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  
+    .desencripta {
+      margin-bottom: 3.2rem;
+    }
+  
+    .mensaje_desencripta {
+      width: 100%;
+      display: none;
+    }
+  
+    .desencripta_frase {
+      width: 100%;
+      display: flex;
+    }
+  
+    .final__pagina {
+      flex-direction: row;
+      gap: 3rem;
+      align-items: center;
+    }
+  
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+   
+  
+    .cuadro__encriptador {
+      position: relative;
+      flex-direction: row;
+      max-height: 100vh;
+      gap: 5rem;
+    }
+  
+    .cabeza {
+        width: 12rem;
+        margin: 0;
+        position: absolute;
+        top: 4rem;
+        left: 1.6rem;
+        width: 12rem;
+    }
+    
+    .imagen__Alura {
+      top: 0;
+      left: 0;
+    }
+  
+    .forma {
+      margin-top: 16.8rem;
+    }
+  
+    .ingresar__texto,
+    .mensaje, 
+    .botones__encriptacion {
+      width: 50rem;
+    }
+  
+    
+    .copea {
+      width: 100%;
+    }
+  
+    .botones__encriptacion {
+      flex-direction: row;
+      margin-bottom: 8rem;
+    }
+  
+    .muñeco_desencriptar {
+      width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+  
+    .desencripta {
+      width: 35%;
+      margin: 4rem 4rem 4rem 0;
+    }
+  
+    .mensaje_desencripta {
+      width: 100%;
+      display: flex;
+    }
+  
+    .desencripta_frase {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+  
+    .lugar_de_la_frase{
+      height: 100%;
+    }
+  
+    .footer {
+      flex-direction: row;
+      gap: 3rem;
+      align-items: center;
+    }
+  
+    .links__container {
+      margin-top: 0;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1201px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      max-width: 144.0rem;
+      margin: 0 auto;
+    }
+  
+    .main__container {
+      flex-direction: row;
+      max-height: 100vh;
+      position: relative;
+      gap: 10rem;
+    }
+  
+    .header {
+      position: absolute;
+      top: 4rem;
+      left: 1.6rem;
+      width: 12rem;
+    }
+    
+    .logo {
+      top: 0;
+      left: 0;
+    }
+  
+    .form {
+      margin-top: 16.8rem;
+    }
+  
+    .form__frase,
+    .form__sugerencia, 
+    .btn__container {
+      width: 62.8rem;
+    }
+  
+    .form__frase {
+      height: 26.9rem;
+    }
+  
+    .btn__container {
+      flex-direction: row;
+      margin-bottom: 8rem;
+    }
+  
+    .desencriptar__mensaje__img-muñeco {
+      display: inline-block;
+    }
+  
+    .desencriptar {
+      width: 40rem;
+      margin:  4rem 4rem 4rem 0;
+    }
+  
+    .desencriptar__mensaje {
+      width: 33.6rem;
+      display: flex;
+    }
+  
+    .desencriptar__resultado {
+      width: 33.6rem;
+      height: 100%;
+      display: none;
+    }
+  
+    .frase-encriptada {
+      height: 100%;
+    }
+  
+    .footer {
+      flex-direction: row;
+      gap: 3rem;
+      align-items: center;
+    }
+  
+    .links__container {
+      margin-top: 0;
+      gap: 1.5rem;
+    }
+  }
